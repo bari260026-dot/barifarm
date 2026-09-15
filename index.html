@@ -2,7 +2,7 @@
 <html lang="id" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>Bari Farm | Daging Ayam Kampung Segar & Telur Asli Berkualitas</title>
   <meta name="description" content="Penyedia Daging Ayam Kampung Segar & Telur Ayam Kampung Asli bernutrisi tinggi dari Bari Farm. Alami, higienis, kemasan vakum steril, dan jaminan segar harian.">
   <meta name="keywords" content="ayam kampung, daging ayam kampung segar, telur ayam kampung asli, ayam organik, kemasan vakum, bari farm">
@@ -42,7 +42,7 @@
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
           }
-        } 
+        }
       }
     }
   </script>
@@ -53,30 +53,30 @@
 <body class="bg-farm-cream text-farm-deep antialiased">
 
   <!-- ================= TOP ANNOUNCEMENT BAR ================= -->
-  <div class="bg-farm-deep text-white text-xs sm:text-sm py-2 px-4 border-b border-farm-leaf/30">
+  <div class="bg-farm-deep text-white text-[11px] sm:text-xs py-2 px-3 sm:px-4 border-b border-farm-leaf/30">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-1 sm:gap-4 text-center sm:text-left">
       <div class="flex items-center gap-2 justify-center">
-        <span class="inline-block w-2 h-2 rounded-full bg-farm-yolk pulse-dot"></span>
+        <span class="inline-block w-2 h-2 rounded-full bg-farm-yolk pulse-dot shrink-0"></span>
         <span class="font-medium tracking-wide">Panen Pagi Hari Ini Tersedia! Kirim Sameday / Instant Terjaga Dingin</span>
       </div>
-      <div class="flex items-center gap-4 text-xs text-farm-soft">
-        <span>⏰ Order sebelum 13.00 WIB untuk kirim hari ini</span>
+      <div class="flex items-center gap-3 sm:gap-4 text-[11px] text-farm-soft">
+        <span>⏰ Order sebelum 13.00 WIB kirim hari ini</span>
         <span class="hidden md:inline">|</span>
-        <span class="hidden md:inline font-semibold text-farm-yolk">📞 CS: 0895-0878-1642</span>
+        <a href="https://wa.me/6289508781642" target="_blank" rel="noopener noreferrer" class="hidden md:inline font-semibold text-farm-yolk hover:underline">📞 CS: 0895-0878-1642</a>
       </div>
     </div>
   </div>
 
   <!-- ================= HEADER / NAVBAR ================= -->
-  <header id="main-navbar" class="sticky top-0 z-40 navbar-glass">
+  <header id="main-navbar" class="sticky top-0 z-30 navbar-glass">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
+      <div class="flex items-center justify-between h-16 sm:h-20">
         
         <!-- Logo Bari Farm -->
-        <a href="#beranda" class="flex items-center gap-3 group">
-          <div class="w-11 h-11 rounded-xl bg-farm-leaf flex items-center justify-center text-white shadow-md shadow-farm-leaf/20 group-hover:bg-farm-green transition-colors">
+        <a href="#beranda" class="flex items-center gap-2.5 sm:gap-3 group shrink-0">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-farm-leaf flex items-center justify-center text-white shadow-md shadow-farm-leaf/20 group-hover:bg-farm-green transition-colors">
             <!-- Farm Leaf & Sun SVG Icon -->
-            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12A10 10 0 0 1 12 2z"/>
               <path d="M12 6c3 2 4 6 0 12-4-6-3-10 0-12z" fill="#F59E0B" stroke="#F59E0B"/>
               <path d="M2 12h20"/>
@@ -84,15 +84,15 @@
           </div>
           <div>
             <div class="flex items-center gap-1.5">
-              <span class="text-2xl font-extrabold tracking-tight text-farm-deep">Bari<span class="text-farm-leaf">Farm</span></span>
-              <span class="text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-farm-yolksoft text-farm-amber border border-yellow-200">Asli</span>
+              <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-farm-deep">Bari<span class="text-farm-leaf">Farm</span></span>
+              <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-farm-yolksoft text-farm-amber border border-yellow-200">Asli</span>
             </div>
-            <p class="text-[11px] font-medium text-farm-earth -mt-1 tracking-wider uppercase">Fresh & Organic Poultry</p>
+            <p class="text-[10px] sm:text-[11px] font-medium text-farm-earth -mt-1 tracking-wider uppercase hidden sm:block">Fresh & Organic Poultry</p>
           </div>
-        </a>        
+        </a>
 
         <!-- Desktop Navigation Links -->
-        <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-farm-deep/80">
+        <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-semibold text-farm-deep/80">
           <a href="#beranda" class="hover:text-farm-leaf transition-colors py-2 border-b-2 border-transparent hover:border-farm-leaf">Beranda</a>
           <a href="#produk" class="hover:text-farm-leaf transition-colors py-2 border-b-2 border-transparent hover:border-farm-leaf">Produk</a>
           <a href="#keunggulan" class="hover:text-farm-leaf transition-colors py-2 border-b-2 border-transparent hover:border-farm-leaf">Keunggulan</a>
@@ -104,7 +104,6 @@
         <!-- CTA WhatsApp Button (Desktop) -->
         <div class="hidden md:flex items-center gap-3">
           <a href="https://wa.me/6289508781642?text=Halo%20Admin%20Bari%20Farm,%20saya%20ingin%20tanya%20produk%20ayam%20dan%20telur%20segar%20hari%20ini." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white px-5 py-2.5 rounded-full font-bold text-sm shadow-md shadow-green-600/20 hover:shadow-lg hover:shadow-green-600/30 transition-all duration-300 transform hover:-translate-y-0.5">
-            <!-- WhatsApp SVG Icon -->
             <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
               <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
             </svg>
@@ -113,97 +112,54 @@
         </div>
 
         <!-- Mobile Hamburger Button -->
-        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-farm-deep hover:bg-farm-surface focus:outline-none" aria-label="Buka Menu Navigasi">
+        <button id="mobile-menu-btn" type="button" class="md:hidden p-2.5 rounded-xl text-farm-deep hover:bg-farm-surface focus:outline-none active:scale-95 transition-transform" aria-label="Buka Menu Navigasi">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4 6h16M4 12h16M4 18h16"/>
           </svg>
         </button>
-      </div>
-    </div>
-
-    <!-- Mobile Drawer Menu -->
-    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-sm">
-      <div class="fixed right-0 top-0 bottom-0 w-4/5 max-w-sm bg-white p-6 shadow-2xl flex flex-col justify-between">
-        <div>
-          <div class="flex items-center justify-between pb-6 border-b border-gray-100">
-            <div class="flex items-center gap-2">
-              <div class="w-9 h-9 rounded-lg bg-farm-leaf flex items-center justify-center text-white">
-                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12A10 10 0 0 1 12 2z"/>
-                  <path d="M12 6c3 2 4 6 0 12-4-6-3-10 0-12z" fill="#F59E0B" stroke="#F59E0B"/>
-                </svg>
-              </div>
-              <span class="text-xl font-bold text-farm-deep">Bari<span class="text-farm-leaf">Farm</span></span>
-            </div>
-            <button id="mobile-menu-close" class="p-2 rounded-md text-gray-500 hover:text-black">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-              </svg>
-            </button>
-          </div>
-
-          <div class="flex flex-col gap-4 py-6 text-base font-semibold text-farm-deep">
-            <a href="#beranda" class="mobile-nav-link py-2 border-b border-gray-50">Beranda</a>
-            <a href="#produk" class="mobile-nav-link py-2 border-b border-gray-50">Katalog Produk</a>
-            <a href="#keunggulan" class="mobile-nav-link py-2 border-b border-gray-50">Keunggulan Kami</a>
-            <a href="#standar-kualitas" class="mobile-nav-link py-2 border-b border-gray-50">Standar Peternakan</a>
-            <a href="#testimoni" class="mobile-nav-link py-2 border-b border-gray-50">Testimoni Pelanggan</a>
-            <a href="#kontak" class="mobile-nav-link py-2 border-b border-gray-50">Kontak & Lokasi</a>
-          </div>
-        </div>
-
-        <div>
-          <a href="https://wa.me/6289508781642?text=Halo%20Admin%20Bari%20Farm,%20saya%20ingin%20memesan%20ayam%20dan%20telur%20segar." target="_blank" class="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white py-3.5 rounded-xl font-bold shadow-lg">
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
-            </svg>
-            <span>Pesan via WhatsApp</span>
-          </a>
-          <p class="text-xs text-center text-gray-400 mt-3">Jam Kirim: 07.00 - 17.00 WIB</p>
-        </div>
       </div>
     </div>
   </header>
 
   <main>
     <!-- ================= HERO SECTION ================= -->
-    <section id="beranda" class="relative overflow-hidden pt-8 pb-16 lg:pt-16 lg:pb-24 gradient-hero-bg">
+    <section id="beranda" class="relative overflow-hidden pt-6 pb-12 sm:pt-12 sm:pb-20 lg:pt-16 lg:pb-24 gradient-hero-bg">
       <!-- Decorative Background Elements -->
       <div class="absolute top-10 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-farm-soft/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
       <div class="absolute right-0 top-1/3 w-72 h-72 bg-farm-yolksoft/40 rounded-full blur-2xl pointer-events-none -z-10"></div>
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
           
           <!-- Left Column: Copywriting & Value Proposition -->
-          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="lg:col-span-7 space-y-4 sm:space-y-6 text-center lg:text-left">
             
             <!-- Trust Badge -->
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full gradient-green-badge text-farm-leaf text-xs sm:text-sm font-bold tracking-wide shadow-sm">
-              <span class="w-2 h-2 rounded-full bg-farm-leaf animate-ping"></span>
-              <span>100% Ayam Kampung Asli • Bebas Suntik Hormon & Antibiotik</span>
+            <div class="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full gradient-green-badge text-farm-leaf text-[11px] sm:text-xs md:text-sm font-bold tracking-wide shadow-sm max-w-full text-left">
+              <span class="w-2 h-2 rounded-full bg-farm-leaf animate-ping shrink-0"></span>
+              <span class="truncate">100% Ayam Kampung Asli • Bebas Kimia & Hormon</span>
             </div>
 
             <!-- Main Headline -->
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-farm-deep leading-[1.15] tracking-tight">
+            <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-farm-deep leading-[1.2] tracking-tight">
               Kebaikan Ayam Kampung Asli, <span class="text-transparent bg-clip-text bg-gradient-to-r from-farm-leaf via-farm-green to-farm-amber">Segar dari Bari Farm</span> ke Meja Anda.
             </h1>
 
             <!-- Subheadline -->
-            <p class="text-base sm:text-lg text-farm-earth max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+            <p class="text-sm sm:text-base lg:text-lg text-farm-earth max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
               Daging ayam kampung pilihan dan telur segar bernutrisi tinggi, diproduksi secara alami, higienis, dan bebas bahan kimia. Diantar segar setiap hari langsung ke dapur keluarga Anda.
             </p>
 
             <!-- Call to Actions -->
-            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
-              <a href="#produk" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-farm-leaf hover:bg-farm-green text-white px-8 py-4 rounded-full font-bold text-base shadow-lg shadow-farm-leaf/25 hover:shadow-farm-leaf/40 transition-all duration-300 transform hover:-translate-y-0.5">
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-1 sm:pt-2">
+              <a href="#produk" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-farm-leaf hover:bg-farm-green text-white px-7 py-3.5 sm:py-4 rounded-full font-bold text-sm sm:text-base shadow-lg shadow-farm-leaf/25 hover:shadow-farm-leaf/40 transition-all duration-300 transform hover:-translate-y-0.5">
                 <span>Pesan Sekarang</span>
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                 </svg>
               </a>
 
-              <a href="#keunggulan" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-farm-surface text-farm-deep border border-farm-border px-7 py-4 rounded-full font-bold text-base shadow-sm hover:shadow transition-all">
+              <a href="#keunggulan" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-farm-surface text-farm-deep border border-farm-border px-6 py-3.5 sm:py-4 rounded-full font-bold text-sm sm:text-base shadow-sm hover:shadow transition-all">
                 <span>Pelajari Keunggulan</span>
                 <svg class="w-4 h-4 text-farm-leaf" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
@@ -211,9 +167,9 @@
               </a>
             </div>
 
-            <!-- Key Trust Metric Badges -->
-            <div class="pt-6 border-t border-farm-border/80 grid grid-cols-3 gap-3 sm:gap-6 text-left">
-              <div class="flex items-center gap-3">
+            <!-- Key Trust Metric Badges (Responsive 1-col on mobile, 3-col on tablet/desktop) -->
+            <div class="pt-5 sm:pt-6 border-t border-farm-border/80 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 text-left">
+              <div class="flex items-center gap-3 bg-white/70 sm:bg-transparent p-2.5 sm:p-0 rounded-xl sm:rounded-none border sm:border-0 border-farm-border/50">
                 <div class="w-10 h-10 rounded-xl bg-farm-soft flex items-center justify-center text-farm-leaf shrink-0">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
@@ -225,7 +181,7 @@
                 </div>
               </div>
 
-              <div class="flex items-center gap-3">
+              <div class="flex items-center gap-3 bg-white/70 sm:bg-transparent p-2.5 sm:p-0 rounded-xl sm:rounded-none border sm:border-0 border-farm-border/50">
                 <div class="w-10 h-10 rounded-xl bg-farm-yolksoft flex items-center justify-center text-farm-amber shrink-0">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
@@ -237,7 +193,7 @@
                 </div>
               </div>
 
-              <div class="flex items-center gap-3">
+              <div class="flex items-center gap-3 bg-white/70 sm:bg-transparent p-2.5 sm:p-0 rounded-xl sm:rounded-none border sm:border-0 border-farm-border/50">
                 <div class="w-10 h-10 rounded-xl bg-farm-soft flex items-center justify-center text-farm-leaf shrink-0">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
@@ -253,66 +209,51 @@
           </div>
 
           <!-- Right Column: Visual Showcase Card -->
-          <div class="lg:col-span-5 relative">
+          <div class="lg:col-span-5 relative mt-2 sm:mt-0">
             <div class="relative mx-auto max-w-md lg:max-w-none">
               
               <!-- Main Visual Card -->
-              <div class="rounded-3xl overflow-hidden bg-white p-3 shadow-2xl shadow-farm-deep/15 border border-farm-border">
-                <div class="relative h-80 sm:h-96 rounded-2xl overflow-hidden bg-farm-surface">
+              <div class="rounded-3xl overflow-hidden bg-white p-2.5 sm:p-3 shadow-2xl shadow-farm-deep/15 border border-farm-border">
+                <div class="relative h-64 sm:h-80 md:h-96 rounded-2xl overflow-hidden bg-farm-surface">
                   <img src="https://images.unsplash.com/photo-1587593810167-a84920ea0781?auto=format&fit=crop&w=1000&q=80" alt="Daging Ayam Kampung Segar Higienis Bari Farm" class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700">
                   
                   <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
                   
                   <!-- Tag Floating on Image -->
-                  <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-full text-xs font-bold text-farm-deep flex items-center gap-1.5 shadow">
-                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                  <div class="absolute top-3 left-3 sm:top-4 sm:left-4 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-full text-[11px] sm:text-xs font-bold text-farm-deep flex items-center gap-1.5 shadow">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
                     <span>Segar Potong Pagi Ini</span>
                   </div>
 
-                  <div class="absolute bottom-4 left-4 right-4 text-white">
-                    <p class="text-xs font-medium text-farm-soft uppercase tracking-wider">Garansi Mutu Peternakan</p>
-                    <p class="text-lg font-bold">100% Organik & Nutrisi Alami Terjaga</p>
+                  <div class="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 text-white">
+                    <p class="text-[11px] sm:text-xs font-medium text-farm-soft uppercase tracking-wider">Garansi Mutu Peternakan</p>
+                    <p class="text-base sm:text-lg font-bold">100% Organik & Nutrisi Alami Terjaga</p>
                   </div>
                 </div>
 
                 <!-- Secondary Small Highlight in Card -->
-                <div class="p-4 grid grid-cols-2 gap-3 mt-1">
-                  <div class="bg-farm-cream rounded-xl p-3 border border-farm-border/60">
-                    <span class="text-[11px] text-farm-earth font-medium">Kadar Protein</span>
-                    <p class="text-base font-extrabold text-farm-leaf">Tinggi & Padat</p>
-                    <span class="text-[10px] text-gray-500">Daging kesat rendah lemak</span>
+                <div class="p-3 sm:p-4 grid grid-cols-2 gap-2.5 sm:gap-3 mt-1">
+                  <div class="bg-farm-cream rounded-xl p-2.5 sm:p-3 border border-farm-border/60">
+                    <span class="text-[10px] sm:text-[11px] text-farm-earth font-medium">Kadar Protein</span>
+                    <p class="text-sm sm:text-base font-extrabold text-farm-leaf">Tinggi & Padat</p>
+                    <span class="text-[9px] sm:text-[10px] text-gray-500">Rendah lemak jenuh</span>
                   </div>
-                  <div class="bg-farm-cream rounded-xl p-3 border border-farm-border/60">
-                    <span class="text-[11px] text-farm-earth font-medium">Kuning Telur</span>
-                    <p class="text-base font-extrabold text-farm-amber">Oranye Alami</p>
-                    <span class="text-[10px] text-gray-500">Kaya lutein & beta karoten</span>
+                  <div class="bg-farm-cream rounded-xl p-2.5 sm:p-3 border border-farm-border/60">
+                    <span class="text-[10px] sm:text-[11px] text-farm-earth font-medium">Kuning Telur</span>
+                    <p class="text-sm sm:text-base font-extrabold text-farm-amber">Oranye Alami</p>
+                    <span class="text-[9px] sm:text-[10px] text-gray-500">Kaya lutein murni</span>
                   </div>
                 </div>
               </div>
 
-              <!-- Floating Micro-Badge Top Right -->
-              <div class="hidden sm:flex absolute -top-5 -right-5 bg-white p-3.5 rounded-2xl shadow-xl border border-farm-border items-center gap-3 animate-float">
-                <div class="w-11 h-11 rounded-full bg-farm-yolksoft flex items-center justify-center text-xl">
+              <!-- Floating Micro-Badge Top Right (hidden on small phone) -->
+              <div class="hidden sm:flex absolute -top-5 -right-5 bg-white p-3 rounded-2xl shadow-xl border border-farm-border items-center gap-3 animate-float">
+                <div class="w-10 h-10 rounded-full bg-farm-yolksoft flex items-center justify-center text-lg">
                   🥚
                 </div>
                 <div>
                   <p class="text-xs font-bold text-farm-deep">Telur Fresh Harian</p>
                   <p class="text-[11px] text-farm-earth">Bebas bahan kimia</p>
-                </div>
-              </div>
-
-              <!-- Floating Micro-Badge Bottom Left -->
-              <div class="hidden sm:flex absolute -bottom-6 -left-6 bg-white p-3.5 rounded-2xl shadow-xl border border-farm-border items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                  </svg>
-                </div>
-                <div>
-                  <div class="flex text-yellow-400 text-xs">
-                    ★★★★★
-                  </div>
-                  <p class="text-[11px] font-bold text-farm-deep">1.200+ Pelanggan Puas</p>
                 </div>
               </div>
 
@@ -324,99 +265,99 @@
     </section>
 
     <!-- ================= KATALOG PRODUK UTAMA (FEATURED PRODUCTS) ================= -->
-    <section id="produk" class="py-20 bg-white relative">
+    <section id="produk" class="py-14 sm:py-20 bg-white relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- Section Header -->
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-farm-soft text-farm-leaf text-xs font-bold uppercase tracking-wider mb-3">
+        <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-farm-soft text-farm-leaf text-[11px] sm:text-xs font-bold uppercase tracking-wider mb-2.5">
             Pilihan Segar Hari Ini
           </div>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-farm-deep tracking-tight">
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-farm-deep tracking-tight">
             Katalog Produk Utama Bari Farm
           </h2>
-          <p class="mt-3 text-base text-farm-earth">
+          <p class="mt-2.5 text-sm sm:text-base text-farm-earth">
             Dipanen, dibersihkan dengan standar higienis, dikemas kedap udara (*vacuum-sealed*), dan siap diantar langsung ke rumah Anda.
           </p>
         </div>
 
         <!-- Product Cards Grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
           
           <!-- ================= KARTU 1: DAGING AYAM KAMPUNG SEGAR ================= -->
           <div class="fresh-card rounded-3xl bg-farm-cream border border-farm-border overflow-hidden flex flex-col justify-between shadow-subtle">
             <div>
               <!-- Product Image Showcase -->
-              <div class="relative h-64 sm:h-72 overflow-hidden bg-farm-surface">
+              <div class="relative h-56 sm:h-72 overflow-hidden bg-farm-surface">
                 <img src="https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=800&q=80" alt="Daging Ayam Kampung Segar Kemasan Vakum" class="w-full h-full object-cover object-center">
-                <div class="absolute top-4 left-4 flex flex-col gap-2">
-                  <span class="bg-farm-leaf text-white text-xs font-bold px-3 py-1 rounded-full shadow">
+                <div class="absolute top-3 left-3 sm:top-4 sm:left-4 flex flex-col gap-1.5 sm:gap-2">
+                  <span class="bg-farm-leaf text-white text-[11px] sm:text-xs font-bold px-2.5 sm:px-3 py-1 rounded-full shadow">
                     Kemasan Vakum Higienis
                   </span>
-                  <span id="chicken-badge" class="bg-white/95 text-farm-deep text-xs font-bold px-3 py-1 rounded-full shadow border border-gray-100">
+                  <span id="chicken-badge" class="bg-white/95 text-farm-deep text-[11px] sm:text-xs font-bold px-2.5 sm:px-3 py-1 rounded-full shadow border border-gray-100">
                     Paling Favorit ⭐
                   </span>
                 </div>
-                <div class="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-lg">
+                <div class="absolute bottom-2.5 right-2.5 sm:bottom-3 sm:right-3 bg-black/60 backdrop-blur-sm text-white text-[11px] sm:text-xs px-2.5 sm:px-3 py-1 rounded-lg">
                   Berat bersih: <span id="chicken-weight" class="font-bold text-farm-yolk">±1050 gram</span>
                 </div>
               </div>
 
               <!-- Product Info & Variant Selection -->
-              <div class="p-6 sm:p-8">
-                <div class="flex items-start justify-between gap-4 mb-3">
+              <div class="p-5 sm:p-7">
+                <div class="flex items-start justify-between gap-3 mb-3">
                   <div>
-                    <span class="text-xs font-bold text-farm-leaf uppercase tracking-wider">Kategori: Daging Segar</span>
-                    <h3 class="text-2xl font-extrabold text-farm-deep">Daging Ayam Kampung Segar</h3>
+                    <span class="text-[11px] sm:text-xs font-bold text-farm-leaf uppercase tracking-wider">Kategori: Daging Segar</span>
+                    <h3 class="text-xl sm:text-2xl font-extrabold text-farm-deep">Daging Ayam Kampung Segar</h3>
                   </div>
                   <div class="text-right shrink-0">
-                    <span class="text-xs text-gray-500 block">Harga</span>
-                    <span id="chicken-price" class="text-2xl sm:text-3xl font-black text-farm-leaf">Rp 68.000</span>
+                    <span class="text-[11px] text-gray-500 block">Harga</span>
+                    <span id="chicken-price" class="text-xl sm:text-3xl font-black text-farm-leaf">Rp 68.000</span>
                   </div>
                 </div>
 
-                <p id="chicken-desc" class="text-sm text-farm-earth mb-6 min-h-[44px]">
+                <p id="chicken-desc" class="text-xs sm:text-sm text-farm-earth mb-5 min-h-[40px] leading-relaxed">
                   Ukuran ideal keluarga dengan serat daging padat berisi, gurih alami, sangat lezat untuk sop ayam herbal & opor tradisi.
                 </p>
 
                 <!-- Pilihan Varian Karkas Utuh / Potong -->
-                <div class="mb-6">
-                  <label class="block text-xs font-bold text-farm-deep uppercase tracking-wider mb-2.5">
+                <div class="mb-5">
+                  <label class="block text-[11px] sm:text-xs font-bold text-farm-deep uppercase tracking-wider mb-2">
                     Pilih Varian & Ukuran Potongan:
                   </label>
-                  <div class="grid grid-cols-2 gap-2.5">
-                    <button type="button" data-chicken-variant="karkas-800" class="variant-btn p-3 rounded-xl text-left text-xs sm:text-sm">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    <button type="button" data-chicken-variant="karkas-800" class="variant-btn p-2.5 sm:p-3 rounded-xl text-left text-xs">
                       <span class="block font-bold">Karkas Muda (800g)</span>
                       <span class="text-[11px] text-gray-500">Utuh + Ceker & Hati</span>
                     </button>
-                    <button type="button" data-chicken-variant="karkas-1000" class="variant-btn active p-3 rounded-xl text-left text-xs sm:text-sm">
+                    <button type="button" data-chicken-variant="karkas-1000" class="variant-btn active p-2.5 sm:p-3 rounded-xl text-left text-xs">
                       <span class="block font-bold">Karkas Standar (1kg)</span>
                       <span class="text-[11px] text-gray-500">Utuh favorit keluarga</span>
                     </button>
-                    <button type="button" data-chicken-variant="potong-4" class="variant-btn p-3 rounded-xl text-left text-xs sm:text-sm">
+                    <button type="button" data-chicken-variant="potong-4" class="variant-btn p-2.5 sm:p-3 rounded-xl text-left text-xs">
                       <span class="block font-bold">Potong 4 Bagian</span>
-                      <span class="text-[11px] text-gray-500">Siap masak langsung</span>
+                      <span class="text-[11px] text-gray-500">Praktis siap masak</span>
                     </button>
-                    <button type="button" data-chicken-variant="potong-8" class="variant-btn p-3 rounded-xl text-left text-xs sm:text-sm">
+                    <button type="button" data-chicken-variant="potong-8" class="variant-btn p-2.5 sm:p-3 rounded-xl text-left text-xs">
                       <span class="block font-bold">Potong 8 Bagian</span>
-                      <span class="text-[11px] text-gray-500">Praktis hidangan harian</span>
+                      <span class="text-[11px] text-gray-500">Porsi pas sehari-hari</span>
                     </button>
                   </div>
                 </div>
 
                 <!-- Features Bullets -->
-                <div class="bg-white rounded-2xl p-4 border border-farm-border/60 mb-6 space-y-2 text-xs text-farm-deep">
+                <div class="bg-white rounded-2xl p-3.5 sm:p-4 border border-farm-border/60 mb-5 space-y-2 text-xs text-farm-deep">
                   <div class="flex items-center gap-2">
                     <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                    <span>100% dipotong syar'i dan dicuci bersih menggunakan air mengalir</span>
+                    <span>100% dipotong syar'i dan dicuci bersih air mengalir</span>
                   </div>
                   <div class="flex items-center gap-2">
                     <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                    <span>Kemasan vakum hampa udara (tahan hingga 6 bulan di freezer)</span>
+                    <span>Kemasan vakum hampa udara (tahan 6 bulan di freezer)</span>
                   </div>
                   <div class="flex items-center gap-2">
                     <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                    <span>Dilengkapi ice gel pack gratis untuk menjaga kesegaran selama kurir jalan</span>
+                    <span>Dilengkapi ice gel pack gratis menjaga suhu tetap dingin</span>
                   </div>
                 </div>
 
@@ -424,21 +365,21 @@
             </div>
 
             <!-- Card Footer & Action Buttons -->
-            <div class="p-6 sm:p-8 pt-0 border-t border-farm-border/40 mt-auto">
-              <div class="flex items-center gap-4">
+            <div class="p-5 sm:p-7 pt-0 border-t border-farm-border/40 mt-auto">
+              <div class="flex items-center gap-2.5 sm:gap-4">
                 <!-- Quantity Stepper -->
-                <div class="flex items-center border-2 border-farm-border rounded-xl bg-white px-2 py-1.5">
-                  <button type="button" id="chicken-qty-minus" class="w-8 h-8 rounded-lg hover:bg-farm-surface flex items-center justify-center font-bold text-gray-600 text-lg" aria-label="Kurangi Jumlah">-</button>
-                  <span id="chicken-qty" class="w-8 text-center font-bold text-farm-deep text-sm">1</span>
-                  <button type="button" id="chicken-qty-plus" class="w-8 h-8 rounded-lg hover:bg-farm-surface flex items-center justify-center font-bold text-gray-600 text-lg" aria-label="Tambah Jumlah">+</button>
+                <div class="flex items-center border-2 border-farm-border rounded-xl bg-white px-2 py-1 shrink-0 shadow-sm">
+                  <button type="button" id="chicken-qty-minus" class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg hover:bg-farm-surface flex items-center justify-center font-bold text-gray-700 text-lg" aria-label="Kurangi Jumlah">-</button>
+                  <span id="chicken-qty" class="w-7 text-center font-bold text-farm-deep text-sm">1</span>
+                  <button type="button" id="chicken-qty-plus" class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg hover:bg-farm-surface flex items-center justify-center font-bold text-gray-700 text-lg" aria-label="Tambah Jumlah">+</button>
                 </div>
 
                 <!-- Order Button -->
-                <button type="button" id="chicken-order-btn" class="flex-1 bg-farm-leaf hover:bg-farm-green text-white font-bold py-3.5 px-6 rounded-xl flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all duration-200">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <button type="button" id="chicken-order-btn" class="flex-1 bg-farm-leaf hover:bg-farm-green text-white font-bold py-3 sm:py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all duration-200 text-xs sm:text-sm min-w-0">
+                  <svg class="w-4 h-4 sm:w-5 sm:h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
                   </svg>
-                  <span>Beli Daging Ayam</span>
+                  <span class="truncate">Beli Daging Ayam</span>
                 </button>
               </div>
             </div>
@@ -448,53 +389,53 @@
           <div class="fresh-card rounded-3xl bg-farm-cream border border-farm-border overflow-hidden flex flex-col justify-between shadow-subtle">
             <div>
               <!-- Product Image Showcase -->
-              <div class="relative h-64 sm:h-72 overflow-hidden bg-farm-surface">
+              <div class="relative h-56 sm:h-72 overflow-hidden bg-farm-surface">
                 <img src="https://images.unsplash.com/photo-1516448620398-c5f44bf9f441?auto=format&fit=crop&w=800&q=80" alt="Telur Ayam Kampung Asli Segar Pilihan" class="w-full h-full object-cover object-center">
-                <div class="absolute top-4 left-4 flex flex-col gap-2">
-                  <span class="bg-farm-amber text-white text-xs font-bold px-3 py-1 rounded-full shadow">
+                <div class="absolute top-3 left-3 sm:top-4 sm:left-4 flex flex-col gap-1.5 sm:gap-2">
+                  <span class="bg-farm-amber text-white text-[11px] sm:text-xs font-bold px-2.5 sm:px-3 py-1 rounded-full shadow">
                     Telur Asli 100% Murni
                   </span>
-                  <span id="egg-badge" class="bg-white/95 text-farm-deep text-xs font-bold px-3 py-1 rounded-full shadow border border-gray-100">
+                  <span id="egg-badge" class="bg-white/95 text-farm-deep text-[11px] sm:text-xs font-bold px-2.5 sm:px-3 py-1 rounded-full shadow border border-gray-100">
                     Hemat Mingguan Keluarga ⭐
                   </span>
                 </div>
-                <div class="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-lg">
+                <div class="absolute bottom-2.5 right-2.5 sm:bottom-3 sm:right-3 bg-black/60 backdrop-blur-sm text-white text-[11px] sm:text-xs px-2.5 sm:px-3 py-1 rounded-lg">
                   Kuantitas: <span id="egg-weight" class="font-bold text-farm-yolk">30 Butir (1 Tray)</span>
                 </div>
               </div>
 
               <!-- Product Info & Variant Selection -->
-              <div class="p-6 sm:p-8">
-                <div class="flex items-start justify-between gap-4 mb-3">
+              <div class="p-5 sm:p-7">
+                <div class="flex items-start justify-between gap-3 mb-3">
                   <div>
-                    <span class="text-xs font-bold text-farm-amber uppercase tracking-wider">Kategori: Telur Segar Harian</span>
-                    <h3 class="text-2xl font-extrabold text-farm-deep">Telur Ayam Kampung Asli</h3>
+                    <span class="text-[11px] sm:text-xs font-bold text-farm-amber uppercase tracking-wider">Kategori: Telur Segar Harian</span>
+                    <h3 class="text-xl sm:text-2xl font-extrabold text-farm-deep">Telur Ayam Kampung Asli</h3>
                   </div>
                   <div class="text-right shrink-0">
-                    <span class="text-xs text-gray-500 block">Harga</span>
-                    <span id="egg-price" class="text-2xl sm:text-3xl font-black text-farm-amber">Rp 82.000</span>
+                    <span class="text-[11px] text-gray-500 block">Harga</span>
+                    <span id="egg-price" class="text-xl sm:text-3xl font-black text-farm-amber">Rp 82.000</span>
                   </div>
                 </div>
 
-                <p id="egg-desc" class="text-sm text-farm-earth mb-6 min-h-[44px]">
+                <p id="egg-desc" class="text-xs sm:text-sm text-farm-earth mb-5 min-h-[40px] leading-relaxed">
                   Karton tray tebal ramah lingkungan pelindung benturan. Pilihan hemat untuk nutrisi harian seluruh anggota keluarga.
                 </p>
 
                 <!-- Pilihan Varian Mika 10 / Tray 30 / Paket 60 -->
-                <div class="mb-6">
-                  <label class="block text-xs font-bold text-farm-deep uppercase tracking-wider mb-2.5">
+                <div class="mb-5">
+                  <label class="block text-[11px] sm:text-xs font-bold text-farm-deep uppercase tracking-wider mb-2">
                     Pilih Jenis Kemasan & Isi:
                   </label>
-                  <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
-                    <button type="button" data-egg-variant="mika-10" class="variant-btn p-3 rounded-xl text-left text-xs">
+                  <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                    <button type="button" data-egg-variant="mika-10" class="variant-btn p-2.5 sm:p-3 rounded-xl text-left text-xs">
                       <span class="block font-bold">Mika Isi 10</span>
                       <span class="text-[11px] text-gray-500">Rp 28.000 / mika</span>
                     </button>
-                    <button type="button" data-egg-variant="tray-30" class="variant-btn active p-3 rounded-xl text-left text-xs">
+                    <button type="button" data-egg-variant="tray-30" class="variant-btn active p-2.5 sm:p-3 rounded-xl text-left text-xs">
                       <span class="block font-bold">Tray Isi 30</span>
                       <span class="text-[11px] text-gray-500">Rp 82.000 / tray</span>
                     </button>
-                    <button type="button" data-egg-variant="tray-60" class="variant-btn p-3 rounded-xl text-left text-xs">
+                    <button type="button" data-egg-variant="tray-60" class="variant-btn p-2.5 sm:p-3 rounded-xl text-left text-xs">
                       <span class="block font-bold">Paket 2 Tray (60)</span>
                       <span class="text-[11px] text-gray-500">Rp 160.000 (Hemat)</span>
                     </button>
@@ -502,18 +443,18 @@
                 </div>
 
                 <!-- Features Bullets -->
-                <div class="bg-white rounded-2xl p-4 border border-farm-border/60 mb-6 space-y-2 text-xs text-farm-deep">
+                <div class="bg-white rounded-2xl p-3.5 sm:p-4 border border-farm-border/60 mb-5 space-y-2 text-xs text-farm-deep">
                   <div class="flex items-center gap-2">
                     <svg class="w-4 h-4 text-amber-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                    <span>Kuning telur bulat menonjol berwarna oranye tua (kaya lutein alami)</span>
+                    <span>Kuning telur bulat menonjol berwarna oranye tua (kaya lutein)</span>
                   </div>
                   <div class="flex items-center gap-2">
                     <svg class="w-4 h-4 text-amber-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                    <span>Cangkang tebal alami, bersih dicuci tanpa bahan kimia pemutih</span>
+                    <span>Cangkang tebal alami, bersih dicuci tanpa bahan pemutih</span>
                   </div>
                   <div class="flex items-center gap-2">
                     <svg class="w-4 h-4 text-amber-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                    <span>Garansi ganti baru jika terdapat butir telur yang pecah saat kurir tiba</span>
+                    <span>Garansi ganti baru bila terdapat butir telur yang pecah saat kurir tiba</span>
                   </div>
                 </div>
 
@@ -521,21 +462,21 @@
             </div>
 
             <!-- Card Footer & Action Buttons -->
-            <div class="p-6 sm:p-8 pt-0 border-t border-farm-border/40 mt-auto">
-              <div class="flex items-center gap-4">
+            <div class="p-5 sm:p-7 pt-0 border-t border-farm-border/40 mt-auto">
+              <div class="flex items-center gap-2.5 sm:gap-4">
                 <!-- Quantity Stepper -->
-                <div class="flex items-center border-2 border-farm-border rounded-xl bg-white px-2 py-1.5">
-                  <button type="button" id="egg-qty-minus" class="w-8 h-8 rounded-lg hover:bg-farm-surface flex items-center justify-center font-bold text-gray-600 text-lg" aria-label="Kurangi Jumlah">-</button>
-                  <span id="egg-qty" class="w-8 text-center font-bold text-farm-deep text-sm">1</span>
-                  <button type="button" id="egg-qty-plus" class="w-8 h-8 rounded-lg hover:bg-farm-surface flex items-center justify-center font-bold text-gray-600 text-lg" aria-label="Tambah Jumlah">+</button>
+                <div class="flex items-center border-2 border-farm-border rounded-xl bg-white px-2 py-1 shrink-0 shadow-sm">
+                  <button type="button" id="egg-qty-minus" class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg hover:bg-farm-surface flex items-center justify-center font-bold text-gray-700 text-lg" aria-label="Kurangi Jumlah">-</button>
+                  <span id="egg-qty" class="w-7 text-center font-bold text-farm-deep text-sm">1</span>
+                  <button type="button" id="egg-qty-plus" class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg hover:bg-farm-surface flex items-center justify-center font-bold text-gray-700 text-lg" aria-label="Tambah Jumlah">+</button>
                 </div>
 
                 <!-- Order Button -->
-                <button type="button" id="egg-order-btn" class="flex-1 bg-farm-amber hover:bg-amber-600 text-white font-bold py-3.5 px-6 rounded-xl flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all duration-200">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <button type="button" id="egg-order-btn" class="flex-1 bg-farm-amber hover:bg-amber-600 text-white font-bold py-3 sm:py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all duration-200 text-xs sm:text-sm min-w-0">
+                  <svg class="w-4 h-4 sm:w-5 sm:h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
                   </svg>
-                  <span>Beli Telur Kampung</span>
+                  <span class="truncate">Beli Telur Kampung</span>
                 </button>
               </div>
             </div>
@@ -544,13 +485,13 @@
         </div>
 
         <!-- Custom / Bundle Promo Banner -->
-        <div class="mt-12 bg-gradient-to-r from-farm-deep to-farm-green rounded-3xl p-6 sm:p-8 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
-          <div class="space-y-2 text-center md:text-left">
-            <span class="inline-block bg-farm-yolk text-farm-deep font-bold text-xs uppercase px-3 py-1 rounded-full">Paket Kombo Sehat Hemat</span>
-            <h3 class="text-xl sm:text-2xl font-extrabold">Butuh Stok Resto, Catering, atau Langganan Mingguan Keluarga?</h3>
-            <p class="text-sm text-farm-soft max-w-xl">Dapatkan penawaran khusus diskon ongkir dan harga grosir untuk pemesanan rutin atau kapasitas besar.</p>
+        <div class="mt-10 sm:mt-12 bg-gradient-to-r from-farm-deep to-farm-green rounded-3xl p-6 sm:p-8 text-white flex flex-col md:flex-row items-center justify-between gap-5 sm:gap-6 shadow-xl text-center md:text-left">
+          <div class="space-y-2">
+            <span class="inline-block bg-farm-yolk text-farm-deep font-bold text-[11px] sm:text-xs uppercase px-3 py-1 rounded-full">Paket Kombo Sehat Hemat</span>
+            <h3 class="text-lg sm:text-2xl font-extrabold">Butuh Stok Resto, Catering, atau Langganan Mingguan Keluarga?</h3>
+            <p class="text-xs sm:text-sm text-farm-soft max-w-xl">Dapatkan penawaran khusus diskon ongkir dan harga grosir untuk pemesanan rutin atau kapasitas besar.</p>
           </div>
-          <a href="https://wa.me/6289508781642?text=Halo%20Admin%20Bari%20Farm,%20saya%20ingin%20tanya%20paket%20langganan%20mingguan%20atau%20pembelian%20grosir%20ayam%20dan%20telur." target="_blank" class="shrink-0 bg-farm-yolk hover:bg-yellow-500 text-farm-deep px-6 py-3.5 rounded-full font-extrabold text-sm shadow-md hover:shadow-lg transition-all transform hover:scale-105">
+          <a href="https://wa.me/6289508781642?text=Halo%20Admin%20Bari%20Farm,%20saya%20ingin%20tanya%20paket%20langganan%20mingguan%20atau%20pembelian%20grosir%20ayam%20dan%20telur." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto shrink-0 bg-farm-yolk hover:bg-yellow-500 text-farm-deep px-6 py-3.5 rounded-full font-extrabold text-sm shadow-md hover:shadow-lg transition-all text-center">
             Konsultasi Paket Grosir ➔
           </a>
         </div>
@@ -559,36 +500,35 @@
     </section>
 
     <!-- ================= MENGAPA MEMILIH BARI FARM? (KEUNGGULAN KAMI) ================= -->
-    <section id="keunggulan" class="py-20 bg-farm-surface/60 relative">
+    <section id="keunggulan" class="py-14 sm:py-20 bg-farm-surface/60 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- Section Header -->
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-farm-soft text-farm-leaf text-xs font-bold uppercase tracking-wider mb-3">
+        <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-farm-soft text-farm-leaf text-[11px] sm:text-xs font-bold uppercase tracking-wider mb-2.5">
             Komitmen Kualitas Terbaik
           </div>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-farm-deep tracking-tight">
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-farm-deep tracking-tight">
             Mengapa Memilih Bari Farm?
           </h2>
-          <p class="mt-3 text-base text-farm-earth">
+          <p class="mt-2.5 text-sm sm:text-base text-farm-earth">
             Kami mendedikasikan seluruh proses peternakan untuk menghasilkan produk ayam kampung yang benar-benar murni, bersih, dan menyehatkan keluarga Anda.
           </p>
         </div>
 
         <!-- 4 Core Pillars Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
           
           <!-- Pillar 1 -->
-          <div class="bg-white rounded-2xl p-7 border border-farm-border shadow-subtle hover:shadow-hover transition-all duration-300 flex flex-col justify-between group">
+          <div class="bg-white rounded-2xl p-6 sm:p-7 border border-farm-border shadow-subtle hover:shadow-hover transition-all duration-300 flex flex-col justify-between group">
             <div>
-              <div class="w-14 h-14 rounded-2xl bg-farm-soft text-farm-leaf flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-farm-leaf group-hover:text-white transition-all duration-300">
-                <!-- Hen/Farm Natural Icon -->
-                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-farm-soft text-farm-leaf flex items-center justify-center mb-5 group-hover:scale-110 group-hover:bg-farm-leaf group-hover:text-white transition-all duration-300">
+                <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
                 </svg>
               </div>
-              <h3 class="text-lg font-bold text-farm-deep mb-2">100% Ayam Kampung Asli</h3>
-              <p class="text-sm text-farm-earth leading-relaxed">
+              <h3 class="text-base sm:text-lg font-bold text-farm-deep mb-2">100% Ayam Kampung Asli</h3>
+              <p class="text-xs sm:text-sm text-farm-earth leading-relaxed">
                 Tanpa silangan ayam pedaging/broiler. Dirawat dengan pakan alami seperti jagung giling, bekatul, serta suplemen herbal rempah temulawak & kunyit alami.
               </p>
             </div>
@@ -599,16 +539,15 @@
           </div>
 
           <!-- Pillar 2 -->
-          <div class="bg-white rounded-2xl p-7 border border-farm-border shadow-subtle hover:shadow-hover transition-all duration-300 flex flex-col justify-between group">
+          <div class="bg-white rounded-2xl p-6 sm:p-7 border border-farm-border shadow-subtle hover:shadow-hover transition-all duration-300 flex flex-col justify-between group">
             <div>
-              <div class="w-14 h-14 rounded-2xl bg-farm-yolksoft text-farm-amber flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-farm-amber group-hover:text-white transition-all duration-300">
-                <!-- Clock / Daily Fresh Icon -->
-                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-farm-yolksoft text-farm-amber flex items-center justify-center mb-5 group-hover:scale-110 group-hover:bg-farm-amber group-hover:text-white transition-all duration-300">
+                <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
               </div>
-              <h3 class="text-lg font-bold text-farm-deep mb-2">Jaminan Segar Harian</h3>
-              <p class="text-sm text-farm-earth leading-relaxed">
+              <h3 class="text-base sm:text-lg font-bold text-farm-deep mb-2">Jaminan Segar Harian</h3>
+              <p class="text-xs sm:text-sm text-farm-earth leading-relaxed">
                 Dipotong dan dipanen secara berkala sesuai antrean pesanan setiap pagi. Bukan daging beku stok lama yang telah disimpan berbulan-bulan di cold storage.
               </p>
             </div>
@@ -619,16 +558,15 @@
           </div>
 
           <!-- Pillar 3 -->
-          <div class="bg-white rounded-2xl p-7 border border-farm-border shadow-subtle hover:shadow-hover transition-all duration-300 flex flex-col justify-between group">
+          <div class="bg-white rounded-2xl p-6 sm:p-7 border border-farm-border shadow-subtle hover:shadow-hover transition-all duration-300 flex flex-col justify-between group">
             <div>
-              <div class="w-14 h-14 rounded-2xl bg-farm-soft text-farm-leaf flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-farm-leaf group-hover:text-white transition-all duration-300">
-                <!-- Shield / Hygiene Vacuum Icon -->
-                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-farm-soft text-farm-leaf flex items-center justify-center mb-5 group-hover:scale-110 group-hover:bg-farm-leaf group-hover:text-white transition-all duration-300">
+                <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
                 </svg>
               </div>
-              <h3 class="text-lg font-bold text-farm-deep mb-2">Kemasan Higienis & Rapi</h3>
-              <p class="text-sm text-farm-earth leading-relaxed">
+              <h3 class="text-base sm:text-lg font-bold text-farm-deep mb-2">Kemasan Higienis & Rapi</h3>
+              <p class="text-xs sm:text-sm text-farm-earth leading-relaxed">
                 Dipack dengan teknologi *vacuum sealing food-grade* kedap udara untuk mencegah kontaminasi bakteri, menjaga kelembapan nutrisi, dan bebas bau amis.
               </p>
             </div>
@@ -639,16 +577,15 @@
           </div>
 
           <!-- Pillar 4 -->
-          <div class="bg-white rounded-2xl p-7 border border-farm-border shadow-subtle hover:shadow-hover transition-all duration-300 flex flex-col justify-between group">
+          <div class="bg-white rounded-2xl p-6 sm:p-7 border border-farm-border shadow-subtle hover:shadow-hover transition-all duration-300 flex flex-col justify-between group">
             <div>
-              <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-emerald-700 group-hover:text-white transition-all duration-300">
-                <!-- Delivery Fast Icon -->
-                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-5 group-hover:scale-110 group-hover:bg-emerald-700 group-hover:text-white transition-all duration-300">
+                <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                 </svg>
               </div>
-              <h3 class="text-lg font-bold text-farm-deep mb-2">Pengiriman Cepat</h3>
-              <p class="text-sm text-farm-earth leading-relaxed">
+              <h3 class="text-base sm:text-lg font-bold text-farm-deep mb-2">Pengiriman Cepat</h3>
+              <p class="text-xs sm:text-sm text-farm-earth leading-relaxed">
                 Didukung kurir instan dan sameday pilihan. Setiap kemasan dilengkapi pendingin aman (*ice gel*) agar kualitas daging dan telur tetap prima saat sampai di tangan Anda.
               </p>
             </div>
@@ -664,66 +601,63 @@
     </section>
 
     <!-- ================= PROSES & KUALITAS (OUR FARM STANDARD) ================= -->
-    <section id="standar-kualitas" class="py-20 bg-white relative">
+    <section id="standar-kualitas" class="py-14 sm:py-20 bg-white relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- Section Header -->
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-farm-soft text-farm-leaf text-xs font-bold uppercase tracking-wider mb-3">
+        <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-farm-soft text-farm-leaf text-[11px] sm:text-xs font-bold uppercase tracking-wider mb-2.5">
             Standar Mutu Bari Farm
           </div>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-farm-deep tracking-tight">
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-farm-deep tracking-tight">
             Proses & Standar Peternakan Kami
           </h2>
-          <p class="mt-3 text-base text-farm-earth">
+          <p class="mt-2.5 text-sm sm:text-base text-farm-earth">
             Tiga langkah sederhana namun ketat untuk memastikan setiap butir telur dan potongan daging memenuhi standar higienis tertinggi.
           </p>
         </div>
 
         <!-- 3 Simple Steps Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 relative">
           
           <!-- Step 1 -->
-          <div class="relative bg-farm-cream rounded-3xl p-8 border border-farm-border flex flex-col items-center text-center">
-            <!-- Step Number Badge -->
-            <div class="w-14 h-14 rounded-full bg-farm-leaf text-white font-extrabold text-xl flex items-center justify-center shadow-lg shadow-farm-leaf/30 mb-6 z-10">
+          <div class="relative bg-farm-cream rounded-3xl p-6 sm:p-8 border border-farm-border flex flex-col items-center text-center">
+            <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-farm-leaf text-white font-extrabold text-lg sm:text-xl flex items-center justify-center shadow-lg shadow-farm-leaf/30 mb-5 z-10">
               01
             </div>
-            <div class="w-full h-44 rounded-2xl overflow-hidden mb-6 bg-farm-surface">
+            <div class="w-full h-40 sm:h-44 rounded-2xl overflow-hidden mb-5 bg-farm-surface">
               <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=600&q=80" alt="Pemeliharaan Alami Ayam Kampung Bebas Sangkar" class="w-full h-full object-cover object-center">
             </div>
-            <h3 class="text-xl font-bold text-farm-deep mb-2">Pemeliharaan Alami</h3>
-            <p class="text-sm text-farm-earth leading-relaxed">
+            <h3 class="text-lg sm:text-xl font-bold text-farm-deep mb-2">Pemeliharaan Alami</h3>
+            <p class="text-xs sm:text-sm text-farm-earth leading-relaxed">
               Ayam bergerak bebas di lingkungan peternakan yang bersih, mendapat sinar matahari cukup, serta diberi asupan pakan organik dan jamu rempah penambah imunitas alami.
             </p>
           </div>
 
           <!-- Step 2 -->
-          <div class="relative bg-farm-cream rounded-3xl p-8 border border-farm-border flex flex-col items-center text-center">
-            <!-- Step Number Badge -->
-            <div class="w-14 h-14 rounded-full bg-farm-amber text-white font-extrabold text-xl flex items-center justify-center shadow-lg shadow-amber-500/30 mb-6 z-10">
+          <div class="relative bg-farm-cream rounded-3xl p-6 sm:p-8 border border-farm-border flex flex-col items-center text-center">
+            <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-farm-amber text-white font-extrabold text-lg sm:text-xl flex items-center justify-center shadow-lg shadow-amber-500/30 mb-5 z-10">
               02
             </div>
-            <div class="w-full h-44 rounded-2xl overflow-hidden mb-6 bg-farm-surface">
+            <div class="w-full h-40 sm:h-44 rounded-2xl overflow-hidden mb-5 bg-farm-surface">
               <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?auto=format&fit=crop&w=600&q=80" alt="Pemrosesan Higienis & Kemasan Vakum" class="w-full h-full object-cover object-center">
             </div>
-            <h3 class="text-xl font-bold text-farm-deep mb-2">Pemrosesan Higienis</h3>
-            <p class="text-sm text-farm-earth leading-relaxed">
+            <h3 class="text-lg sm:text-xl font-bold text-farm-deep mb-2">Pemrosesan Higienis</h3>
+            <p class="text-xs sm:text-sm text-farm-earth leading-relaxed">
               Penyembelihan halal & syar'i, pembersihan jeroan teliti dengan air mengalir berstandar sanitasi tinggi, dilanjutkan pengemasan vakum steril hampa udara.
             </p>
           </div>
 
           <!-- Step 3 -->
-          <div class="relative bg-farm-cream rounded-3xl p-8 border border-farm-border flex flex-col items-center text-center">
-            <!-- Step Number Badge -->
-            <div class="w-14 h-14 rounded-full bg-farm-deep text-white font-extrabold text-xl flex items-center justify-center shadow-lg shadow-farm-deep/30 mb-6 z-10">
+          <div class="relative bg-farm-cream rounded-3xl p-6 sm:p-8 border border-farm-border flex flex-col items-center text-center">
+            <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-farm-deep text-white font-extrabold text-lg sm:text-xl flex items-center justify-center shadow-lg shadow-farm-deep/30 mb-5 z-10">
               03
             </div>
-            <div class="w-full h-44 rounded-2xl overflow-hidden mb-6 bg-farm-surface">
+            <div class="w-full h-40 sm:h-44 rounded-2xl overflow-hidden mb-5 bg-farm-surface">
               <img src="https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&w=600&q=80" alt="Pengiriman Segar Suhu Dingin Sameday" class="w-full h-full object-cover object-center">
             </div>
-            <h3 class="text-xl font-bold text-farm-deep mb-2">Pengiriman Segar</h3>
-            <p class="text-sm text-farm-earth leading-relaxed">
+            <h3 class="text-lg sm:text-xl font-bold text-farm-deep mb-2">Pengiriman Segar</h3>
+            <p class="text-xs sm:text-sm text-farm-earth leading-relaxed">
               Produk disimpan dalam rantai pendingin (*chilled temperature*) dan dikirim cepat dengan proteksi ice pack ke rumah Anda pada hari yang sama.
             </p>
           </div>
@@ -734,84 +668,84 @@
     </section>
 
     <!-- ================= TESTIMONI PELANGGAN ================= -->
-    <section id="testimoni" class="py-20 bg-farm-surface/50 relative">
+    <section id="testimoni" class="py-14 sm:py-20 bg-farm-surface/50 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- Section Header -->
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-farm-yolksoft text-farm-amber text-xs font-bold uppercase tracking-wider mb-3">
+        <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-farm-yolksoft text-farm-amber text-[11px] sm:text-xs font-bold uppercase tracking-wider mb-2.5">
             Kisah Nyata Pelanggan
           </div>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-farm-deep tracking-tight">
-            Dipercaya Dapur Keluarga & Pengusaha Kuliner
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-farm-deep tracking-tight">
+            Dipercaya Dapur Keluarga & Resto
           </h2>
-          <p class="mt-3 text-base text-farm-earth">
+          <p class="mt-2.5 text-sm sm:text-base text-farm-earth">
             Simak ulasan dari para ibu rumah tangga, koki profesional, dan pegiat gaya hidup sehat yang telah merasakan keaslian produk Bari Farm.
           </p>
         </div>
 
         <!-- Testimonial Cards Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           
           <!-- Testimonial 1: Ibu Rumah Tangga -->
-          <div class="bg-white rounded-3xl p-8 border border-farm-border shadow-subtle flex flex-col justify-between">
+          <div class="bg-white rounded-3xl p-6 sm:p-8 border border-farm-border shadow-subtle flex flex-col justify-between">
             <div>
-              <div class="flex text-amber-400 text-base mb-4">
+              <div class="flex text-amber-400 text-sm sm:text-base mb-3.5">
                 ★★★★★
               </div>
-              <p class="text-farm-deep text-sm sm:text-base italic leading-relaxed mb-6">
-                "Kaldunya luar biasa bening dan gurih tanpa perlu banyak MSG. Dagingnya empuk, sama sekali tidak berbau amis karena dikemas vakum rapi. Sangat tenang menyajikannya untuk sup MPASI si kecil!"
+              <p class="text-farm-deep text-xs sm:text-sm italic leading-relaxed mb-5">
+                "Kaldunya luar biasa bening dan gurih tanpa perlu banyak bumbu penguat. Dagingnya empuk, sama sekali tidak berbau amis karena dikemas vakum rapi. Sangat tenang menyajikannya untuk sup MPASI si kecil!"
               </p>
             </div>
-            <div class="flex items-center gap-3.5 pt-4 border-t border-gray-100">
-              <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center font-extrabold text-emerald-800 text-sm">
+            <div class="flex items-center gap-3 pt-3.5 border-t border-gray-100">
+              <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-emerald-100 flex items-center justify-center font-extrabold text-emerald-800 text-xs sm:text-sm shrink-0">
                 IR
               </div>
               <div>
-                <h4 class="font-bold text-sm text-farm-deep">Ibu Ratna Dewi</h4>
-                <p class="text-xs text-farm-earth">Ibu Rumah Tangga & Ibu Muda (Jakarta Selatan)</p>
+                <h4 class="font-bold text-xs sm:text-sm text-farm-deep">Ibu Ratna Dewi</h4>
+                <p class="text-[11px] text-farm-earth">Ibu Rumah Tangga (Jakarta Selatan)</p>
               </div>
             </div>
           </div>
 
           <!-- Testimonial 2: Koki / Resto -->
-          <div class="bg-white rounded-3xl p-8 border border-farm-border shadow-subtle flex flex-col justify-between">
+          <div class="bg-white rounded-3xl p-6 sm:p-8 border border-farm-border shadow-subtle flex flex-col justify-between">
             <div>
-              <div class="flex text-amber-400 text-base mb-4">
+              <div class="flex text-amber-400 text-sm sm:text-base mb-3.5">
                 ★★★★★
               </div>
-              <p class="text-farm-deep text-sm sm:text-base italic leading-relaxed mb-6">
+              <p class="text-farm-deep text-xs sm:text-sm italic leading-relaxed mb-5">
                 "Sebagai pemilik resto ayam bakar tradisional, konsistensi tekstur daging ayam adalah kunci. Ayam kampung dari Bari Farm teksturnya kenyal pas, tidak kering, dan pasokan segarnya selalu tepat waktu."
               </p>
             </div>
-            <div class="flex items-center gap-3.5 pt-4 border-t border-gray-100">
-              <div class="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center font-extrabold text-amber-800 text-sm">
+            <div class="flex items-center gap-3 pt-3.5 border-t border-gray-100">
+              <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-amber-100 flex items-center justify-center font-extrabold text-amber-800 text-xs sm:text-sm shrink-0">
                 CH
               </div>
               <div>
-                <h4 class="font-bold text-sm text-farm-deep">Chef Hendra Prasetyo</h4>
-                <p class="text-xs text-farm-earth">Owner Resto Dapur Nusantara & Katering</p>
+                <h4 class="font-bold text-xs sm:text-sm text-farm-deep">Chef Hendra Prasetyo</h4>
+                <p class="text-[11px] text-farm-earth">Owner Resto Dapur Nusantara</p>
               </div>
             </div>
           </div>
 
           <!-- Testimonial 3: Health Enthusiast -->
-          <div class="bg-white rounded-3xl p-8 border border-farm-border shadow-subtle flex flex-col justify-between">
+          <div class="bg-white rounded-3xl p-6 sm:p-8 border border-farm-border shadow-subtle flex flex-col justify-between">
             <div>
-              <div class="flex text-amber-400 text-base mb-4">
+              <div class="flex text-amber-400 text-sm sm:text-base mb-3.5">
                 ★★★★★
               </div>
-              <p class="text-farm-deep text-sm sm:text-base italic leading-relaxed mb-6">
+              <p class="text-farm-deep text-xs sm:text-sm italic leading-relaxed mb-5">
                 "Warna kuning telur ayam kampungnya benar-benar oranye kental, bukan kuning pucat. Dipecahkan aromanya segar dan bulat kokoh. Pilihan wajib untuk sarapan bernutrisi tinggi dan suplemen olahraga."
               </p>
             </div>
-            <div class="flex items-center gap-3.5 pt-4 border-t border-gray-100">
-              <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center font-extrabold text-blue-800 text-sm">
+            <div class="flex items-center gap-3 pt-3.5 border-t border-gray-100">
+              <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-blue-100 flex items-center justify-center font-extrabold text-blue-800 text-xs sm:text-sm shrink-0">
                 DA
               </div>
               <div>
-                <h4 class="font-bold text-sm text-farm-deep">dr. Dimas Anggoro</h4>
-                <p class="text-xs text-farm-earth">Praktisi Medis & Fitness Enthusiast</p>
+                <h4 class="font-bold text-xs sm:text-sm text-farm-deep">dr. Dimas Anggoro</h4>
+                <p class="text-[11px] text-farm-earth">Praktisi Medis & Fitness Enthusiast</p>
               </div>
             </div>
           </div>
@@ -822,18 +756,18 @@
     </section>
 
     <!-- ================= FAQ SECTION ================= -->
-    <section class="py-16 bg-white border-t border-farm-border/60">
+    <section class="py-14 sm:py-16 bg-white border-t border-farm-border/60">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
+        <div class="text-center mb-8 sm:mb-12">
           <span class="text-xs font-bold text-farm-leaf uppercase tracking-wider">Tanya Jawab Seputar Produk</span>
           <h2 class="text-2xl sm:text-3xl font-extrabold text-farm-deep mt-1">Pertanyaan yang Sering Diajukan</h2>
         </div>
 
-        <div class="space-y-4">
-          <details class="group bg-farm-cream rounded-2xl p-5 border border-farm-border [&_summary::-webkit-details-marker]:none">
-            <summary class="flex items-center justify-between cursor-pointer font-bold text-farm-deep text-sm sm:text-base">
+        <div class="space-y-3.5">
+          <details class="group bg-farm-cream rounded-2xl p-4 sm:p-5 border border-farm-border">
+            <summary class="flex items-center justify-between cursor-pointer font-bold text-farm-deep text-xs sm:text-base gap-3">
               <span>Berapa lama ketahanan daging ayam kemasan vakum Bari Farm?</span>
-              <span class="faq-icon transition-transform duration-300 text-farm-leaf">
+              <span class="faq-icon transition-transform duration-300 text-farm-leaf shrink-0">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
               </span>
             </summary>
@@ -842,10 +776,10 @@
             </p>
           </details>
 
-          <details class="group bg-farm-cream rounded-2xl p-5 border border-farm-border [&_summary::-webkit-details-marker]:none">
-            <summary class="flex items-center justify-between cursor-pointer font-bold text-farm-deep text-sm sm:text-base">
+          <details class="group bg-farm-cream rounded-2xl p-4 sm:p-5 border border-farm-border">
+            <summary class="flex items-center justify-between cursor-pointer font-bold text-farm-deep text-xs sm:text-base gap-3">
               <span>Bagaimana jaminan keamanan telur selama proses pengiriman?</span>
-              <span class="faq-icon transition-transform duration-300 text-farm-leaf">
+              <span class="faq-icon transition-transform duration-300 text-farm-leaf shrink-0">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
               </span>
             </summary>
@@ -854,10 +788,10 @@
             </p>
           </details>
 
-          <details class="group bg-farm-cream rounded-2xl p-5 border border-farm-border [&_summary::-webkit-details-marker]:none">
-            <summary class="flex items-center justify-between cursor-pointer font-bold text-farm-deep text-sm sm:text-base">
+          <details class="group bg-farm-cream rounded-2xl p-4 sm:p-5 border border-farm-border">
+            <summary class="flex items-center justify-between cursor-pointer font-bold text-farm-deep text-xs sm:text-base gap-3">
               <span>Area mana saja yang dijangkau untuk pengiriman sameday?</span>
-              <span class="faq-icon transition-transform duration-300 text-farm-leaf">
+              <span class="faq-icon transition-transform duration-300 text-farm-leaf shrink-0">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
               </span>
             </summary>
@@ -872,51 +806,45 @@
   </main>
 
   <!-- ================= FOOTER ================= -->
-  <footer id="kontak" class="bg-farm-deep text-white pt-16 pb-12 border-t border-farm-leaf/30">
+  <footer id="kontak" class="bg-farm-deep text-white pt-14 pb-10 border-t border-farm-leaf/30">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-white/10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-8 pb-10 border-b border-white/10">
         
         <!-- Col 1: Brand Info & Values (5 cols) -->
-        <div class="lg:col-span-5 space-y-4">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-farm-leaf flex items-center justify-center text-white">
-              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <div class="lg:col-span-5 space-y-3.5">
+          <div class="flex items-center gap-2.5">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-farm-leaf flex items-center justify-center text-white shrink-0">
+              <svg class="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12A10 10 0 0 1 12 2z"/>
                 <path d="M12 6c3 2 4 6 0 12-4-6-3-10 0-12z" fill="#F59E0B" stroke="#F59E0B"/>
               </svg>
             </div>
-            <span class="text-2xl font-extrabold tracking-tight">Bari<span class="text-farm-light">Farm</span></span>
+            <span class="text-xl sm:text-2xl font-extrabold tracking-tight">Bari<span class="text-farm-light">Farm</span></span>
           </div>
-          <p class="text-sm text-farm-soft/80 leading-relaxed max-w-sm">
+          <p class="text-xs sm:text-sm text-farm-soft/80 leading-relaxed max-w-sm">
             Peternakan ayam kampung modern yang mengutamakan kualitas alami, higienitas, dan keberlanjutan. Kami hadir untuk memenuhi kebutuhan nutrisi hewani sehat bagi setiap keluarga di Indonesia.
           </p>
-          <div class="pt-2">
-            <span class="text-xs font-semibold text-farm-yolk uppercase tracking-wider block mb-2">Ikuti Akun Resmi Kami:</span>
+          <div class="pt-1">
+            <span class="text-[11px] sm:text-xs font-semibold text-farm-yolk uppercase tracking-wider block mb-2">Ikuti Akun Resmi Kami:</span>
             <!-- Social Media Icons List -->
-            <div class="flex flex-wrap gap-2.5">
-              <!-- YouTube -->
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/10 hover:bg-red-600 flex items-center justify-center transition-colors text-white" aria-label="YouTube Bari Farm">
+            <div class="flex flex-wrap gap-2">
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/10 hover:bg-red-600 flex items-center justify-center transition-colors text-white" aria-label="YouTube Bari Farm">
                 <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
               </a>
-              <!-- Instagram -->
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/10 hover:bg-pink-600 flex items-center justify-center transition-colors text-white" aria-label="Instagram Bari Farm">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/10 hover:bg-pink-600 flex items-center justify-center transition-colors text-white" aria-label="Instagram Bari Farm">
                 <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
               </a>
-              <!-- Facebook -->
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/10 hover:bg-blue-600 flex items-center justify-center transition-colors text-white" aria-label="Facebook Bari Farm">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/10 hover:bg-blue-600 flex items-center justify-center transition-colors text-white" aria-label="Facebook Bari Farm">
                 <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.667 5H18V0h-3.889C10.667 0 9 1.667 9 4.667V8z"/></svg>
               </a>
-              <!-- Threads -->
-              <a href="https://threads.net" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/10 hover:bg-stone-700 flex items-center justify-center transition-colors text-white" aria-label="Threads Bari Farm">
+              <a href="https://threads.net" target="_blank" rel="noopener noreferrer" class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/10 hover:bg-stone-700 flex items-center justify-center transition-colors text-white" aria-label="Threads Bari Farm">
                 <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.186 24C5.545 24 0 18.675 0 12.034 0 5.484 5.39 0 12.085 0c6.64 0 11.915 5.235 11.915 11.884 0 .42-.034.845-.078 1.258h-4.323c.022-.38.04-.766.04-1.155 0-4.326-3.376-7.794-7.554-7.794-4.225 0-7.705 3.52-7.705 7.841 0 4.27 3.434 7.74 7.658 7.74 2.82 0 5.253-1.528 6.578-3.793l3.652 2.378C20.183 21.605 16.505 24 12.186 24z"/></svg>
               </a>
-              <!-- TikTok -->
-              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/10 hover:bg-neutral-800 flex items-center justify-center transition-colors text-white" aria-label="TikTok Bari Farm">
+              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/10 hover:bg-neutral-800 flex items-center justify-center transition-colors text-white" aria-label="TikTok Bari Farm">
                 <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.97v7.94c-.01 2.21-.73 4.41-2.12 6.13-1.89 2.35-4.8 3.73-7.85 3.6-2.52-.06-4.95-1.12-6.72-2.92C-1.85 21.03-.5 18.06.01 15.17c.56-3.14 2.58-5.83 5.56-6.95.84-.32 1.72-.51 2.62-.57.02 1.42.01 2.84 0 4.26-.88.08-1.77.37-2.48.92-.99.78-1.56 2.01-1.49 3.27.07 1.25.75 2.4 1.8 3.03 1.05.63 2.37.71 3.51.27 1.11-.42 1.95-1.42 2.19-2.58.07-.36.09-.73.09-1.1V.02z"/></svg>
               </a>
-              <!-- X (Twitter) -->
-              <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/10 hover:bg-black flex items-center justify-center transition-colors text-white" aria-label="X Bari Farm">
+              <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/10 hover:bg-black flex items-center justify-center transition-colors text-white" aria-label="X Bari Farm">
                 <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
               </a>
             </div>
@@ -924,9 +852,9 @@
         </div>
 
         <!-- Col 2: Jam Operasional & Pengiriman (3 cols) -->
-        <div class="lg:col-span-3 space-y-3">
-          <h3 class="text-base font-bold text-farm-yolk uppercase tracking-wider">Jam Operasional</h3>
-          <ul class="space-y-2 text-sm text-farm-soft/80">
+        <div class="lg:col-span-3 space-y-2.5">
+          <h3 class="text-sm sm:text-base font-bold text-farm-yolk uppercase tracking-wider">Jam Operasional</h3>
+          <ul class="space-y-1.5 text-xs sm:text-sm text-farm-soft/80">
             <li class="flex justify-between border-b border-white/5 pb-1">
               <span>Senin - Sabtu:</span>
               <span class="font-semibold text-white">06.30 - 17.00 WIB</span>
@@ -935,39 +863,39 @@
               <span>Minggu & Libur:</span>
               <span class="font-semibold text-white">07.00 - 14.00 WIB</span>
             </li>
-            <li class="pt-1 text-xs text-farm-soft">
+            <li class="pt-1 text-[11px] text-farm-soft">
               *Pesanan sebelum 13.00 WIB langsung dikirimkan hari yang sama.
             </li>
           </ul>
 
-          <div class="pt-2">
-            <span class="text-xs font-semibold text-farm-yolk uppercase tracking-wider block mb-1">Metode Pengiriman:</span>
+          <div class="pt-1">
+            <span class="text-[11px] sm:text-xs font-semibold text-farm-yolk uppercase tracking-wider block mb-1">Metode Pengiriman:</span>
             <p class="text-xs text-farm-soft/80">GoSend Instant/Sameday, GrabExpress, Paxel Chilled Cold-Chain.</p>
           </div>
         </div>
 
         <!-- Col 3: Info Kontak & Alamat Depo (4 cols) -->
-        <div class="lg:col-span-4 space-y-3">
-          <h3 class="text-base font-bold text-farm-yolk uppercase tracking-wider">Kontak & Depo Farm</h3>
+        <div class="lg:col-span-4 space-y-2.5">
+          <h3 class="text-sm sm:text-base font-bold text-farm-yolk uppercase tracking-wider">Kontak & Depo Farm</h3>
           
-          <div class="space-y-2.5 text-sm text-farm-soft/80">
-            <div class="flex items-start gap-3">
+          <div class="space-y-2 text-xs sm:text-sm text-farm-soft/80">
+            <div class="flex items-start gap-2.5">
               <span class="text-farm-light mt-0.5">📍</span>
               <div>
                 <strong class="text-white block text-xs">Peternakan & Depo Distribusi:</strong>
-                <span>Jl. Cendrawasih Farm No. 18, Sawah Baru, Kec. Ciputat, Tangerang Selatan (Siap Kirim ke Seluruh Jabodetabek)</span>
+                <span>Jl. Cendrawasih Farm No. 18, Sawah Baru, Ciputat, Tangerang Selatan (Jangkauan Seluruh Jabodetabek)</span>
               </div>
             </div>
 
-            <div class="flex items-center gap-3">
+            <div class="flex items-center gap-2.5">
               <span class="text-farm-light">📱</span>
               <div>
                 <strong class="text-white block text-xs">WhatsApp Pemesanan:</strong>
-                <a href="https://wa.me/6289508781642" target="_blank" class="hover:text-farm-light underline">0895-0878-1642 (Admin Respon Cepat)</a>
+                <a href="https://wa.me/6289508781642" target="_blank" rel="noopener noreferrer" class="hover:text-farm-light underline">0895-0878-1642 (Admin Respon Cepat)</a>
               </div>
             </div>
 
-            <div class="flex items-center gap-3">
+            <div class="flex items-center gap-2.5">
               <span class="text-farm-light">✉️</span>
               <div>
                 <strong class="text-white block text-xs">Email Kemitraan:</strong>
@@ -980,9 +908,9 @@
       </div>
 
       <!-- Footer Bottom Copyright -->
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-farm-soft/60">
-        <p>&copy; 2026 Bari Farm. Seluruh Hak Cipta Dilindungi. Solusi Pangan Segar & Sehat Alami.</p>
-        <div class="flex items-center gap-6">
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-farm-soft/60">
+        <p>&copy; 2026 Bari Farm. Seluruh Hak Cipta Dilindungi. Pangan Segar & Sehat Alami.</p>
+        <div class="flex items-center gap-4">
           <a href="#beranda" class="hover:text-white transition-colors">Kembali ke Atas ↑</a>
         </div>
       </div>
@@ -990,91 +918,164 @@
     </div>
   </footer>
 
+  <!-- ================= MOBILE DRAWER MENU (Outside header to avoid backdrop-filter bug) ================= -->
+  <div id="mobile-menu" class="hidden fixed inset-0 z-50 overflow-hidden" role="dialog" aria-modal="true" aria-label="Menu Navigasi Mobile">
+    <!-- Backdrop overlay -->
+    <div id="mobile-menu-backdrop" class="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300"></div>
+
+    <!-- Drawer Panel Container -->
+    <div class="fixed inset-y-0 right-0 max-w-full flex pl-8 sm:pl-10 z-10">
+      <div class="w-screen max-w-xs sm:max-w-sm bg-white shadow-2xl flex flex-col justify-between p-6 overflow-y-auto">
+        <div>
+          <!-- Header of Drawer -->
+          <div class="flex items-center justify-between pb-5 border-b border-gray-100">
+            <div class="flex items-center gap-2.5">
+              <div class="w-10 h-10 rounded-xl bg-farm-leaf flex items-center justify-center text-white shadow-sm">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12A10 10 0 0 1 12 2z"/>
+                  <path d="M12 6c3 2 4 6 0 12-4-6-3-10 0-12z" fill="#F59E0B" stroke="#F59E0B"/>
+                </svg>
+              </div>
+              <div>
+                <span class="text-xl font-extrabold text-farm-deep tracking-tight">Bari<span class="text-farm-leaf">Farm</span></span>
+                <span class="text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-farm-yolksoft text-farm-amber ml-1 border border-yellow-200">Asli</span>
+              </div>
+            </div>
+            <button id="mobile-menu-close" type="button" class="p-2 rounded-xl text-gray-500 hover:text-farm-deep hover:bg-farm-surface transition-colors" aria-label="Tutup Menu Navigasi">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Navigation Links -->
+          <nav class="flex flex-col gap-1 py-5 text-sm font-semibold text-farm-deep">
+            <a href="#beranda" class="mobile-nav-link py-3 px-3.5 rounded-xl hover:bg-farm-cream hover:text-farm-leaf transition-colors flex items-center justify-between">
+              <span>Beranda</span>
+              <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#produk" class="mobile-nav-link py-3 px-3.5 rounded-xl hover:bg-farm-cream hover:text-farm-leaf transition-colors flex items-center justify-between">
+              <span>Katalog Produk</span>
+              <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#keunggulan" class="mobile-nav-link py-3 px-3.5 rounded-xl hover:bg-farm-cream hover:text-farm-leaf transition-colors flex items-center justify-between">
+              <span>Keunggulan Kami</span>
+              <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#standar-kualitas" class="mobile-nav-link py-3 px-3.5 rounded-xl hover:bg-farm-cream hover:text-farm-leaf transition-colors flex items-center justify-between">
+              <span>Standar Peternakan</span>
+              <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#testimoni" class="mobile-nav-link py-3 px-3.5 rounded-xl hover:bg-farm-cream hover:text-farm-leaf transition-colors flex items-center justify-between">
+              <span>Testimoni Pelanggan</span>
+              <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#kontak" class="mobile-nav-link py-3 px-3.5 rounded-xl hover:bg-farm-cream hover:text-farm-leaf transition-colors flex items-center justify-between">
+              <span>Kontak & Depo Farm</span>
+              <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </nav>
+        </div>
+
+        <!-- Bottom CTA in Drawer -->
+        <div class="pt-5 border-t border-gray-100">
+          <a href="https://wa.me/6289508781642?text=Halo%20Admin%20Bari%20Farm,%20saya%20ingin%20memesan%20ayam%20dan%20telur%20segar." target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white py-3.5 rounded-xl font-bold text-sm shadow-md transition-all">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            <span>Pesan via WhatsApp</span>
+          </a>
+          <p class="text-[11px] text-center text-gray-400 mt-2">Jam Kirim: 06.30 - 17.00 WIB</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
-  <aside class="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-2" aria-label="Bantuan dan Pemesanan WhatsApp">
-    <!-- Tooltip Notification Bubble -->
+  <aside class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 flex flex-col items-end gap-2" aria-label="Bantuan dan Pemesanan WhatsApp">
+    <!-- Tooltip Notification Bubble (desktop only) -->
     <div class="hidden sm:flex items-center gap-2 bg-white text-farm-deep text-xs font-bold py-1.5 px-3.5 rounded-full shadow-lg border border-farm-border animate-bounce">
       <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
       <span>Admin Online • Siap Kirim Hari Ini</span>
     </div>
 
     <!-- Floating Icon Button -->
-    <a href="https://wa.me/6289508781642?text=Halo%20Admin%20Bari%20Farm,%20saya%20ingin%20tanya%20produk%20ayam%20dan%20telur%20segar%20hari%20ini." target="_blank" rel="noopener noreferrer" class="w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white flex items-center justify-center shadow-2xl shadow-green-500/50 hover:scale-110 transition-transform duration-300 relative group" aria-label="Chat WhatsApp Bari Farm Langsung">
-      <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+    <a href="https://wa.me/6289508781642?text=Halo%20Admin%20Bari%20Farm,%20saya%20ingin%20tanya%20produk%20ayam%20dan%20telur%20segar%20hari%20ini." target="_blank" rel="noopener noreferrer" class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white flex items-center justify-center shadow-2xl shadow-green-500/50 hover:scale-110 active:scale-95 transition-transform duration-300 relative group" aria-label="Chat WhatsApp Bari Farm Langsung">
+      <svg class="w-7 h-7 sm:w-8 sm:h-8 fill-current" viewBox="0 0 24 24">
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
       </svg>
     </a>
   </aside>
 
   <!-- ================= QUICK ORDER / CHECKOUT MODAL ================= -->
-  <div id="order-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-product-title">
-    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-farm-border relative max-h-[90vh] overflow-y-auto">
+  <div id="order-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-product-title">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-5 sm:p-7 shadow-2xl border border-farm-border relative max-h-[92vh] overflow-y-auto">
       
       <!-- Close Button -->
-      <button type="button" id="modal-close-btn" class="absolute top-5 right-5 p-2 rounded-full text-gray-400 hover:text-farm-deep hover:bg-farm-surface transition-colors" aria-label="Tutup Dialog">
+      <button type="button" id="modal-close-btn" class="absolute top-4 right-4 sm:top-5 sm:right-5 p-2 rounded-full text-gray-400 hover:text-farm-deep hover:bg-farm-surface transition-colors" aria-label="Tutup Dialog">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
         </svg>
       </button>
 
       <!-- Modal Header -->
-      <div class="mb-6">
-        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-farm-soft text-farm-leaf text-xs font-bold mb-2">
+      <div class="mb-5 pr-8">
+        <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-farm-soft text-farm-leaf text-[11px] font-bold mb-1.5">
           <span>Konfirmasi Pesanan Cepat</span>
         </div>
-        <h3 id="modal-product-title" class="text-xl sm:text-2xl font-extrabold text-farm-deep">Daging Ayam Kampung</h3>
-        <p id="modal-variant-title" class="text-sm font-semibold text-farm-amber mt-0.5">Karkas Utuh (1.0kg - 1.1kg)</p>
+        <h3 id="modal-product-title" class="text-lg sm:text-2xl font-extrabold text-farm-deep">Daging Ayam Kampung</h3>
+        <p id="modal-variant-title" class="text-xs sm:text-sm font-semibold text-farm-amber mt-0.5">Karkas Utuh (1.0kg - 1.1kg)</p>
       </div>
 
       <!-- Order Form -->
-      <form class="space-y-4">
+      <form class="space-y-3.5">
         <!-- Quantity & Price Review -->
-        <div class="bg-farm-cream p-4 rounded-2xl border border-farm-border flex items-center justify-between">
+        <div class="bg-farm-cream p-3.5 sm:p-4 rounded-2xl border border-farm-border flex items-center justify-between gap-2">
           <div>
-            <span class="text-xs text-gray-500 block">Harga Satuan</span>
-            <span id="modal-unit-price" class="text-base font-bold text-farm-deep">Rp 68.000</span>
+            <span class="text-[10px] sm:text-xs text-gray-500 block">Harga Satuan</span>
+            <span id="modal-unit-price" class="text-sm sm:text-base font-bold text-farm-deep">Rp 68.000</span>
           </div>
 
           <!-- Modal Quantity Control -->
-          <div class="flex items-center border border-farm-border rounded-xl bg-white px-2 py-1">
+          <div class="flex items-center border border-farm-border rounded-xl bg-white px-2 py-1 shrink-0">
             <button type="button" id="modal-qty-minus" class="w-7 h-7 rounded-lg hover:bg-gray-100 flex items-center justify-center font-bold text-gray-600">-</button>
-            <span id="modal-qty" class="w-8 text-center font-bold text-farm-deep text-sm">1</span>
+            <span id="modal-qty" class="w-7 text-center font-bold text-farm-deep text-sm">1</span>
             <button type="button" id="modal-qty-plus" class="w-7 h-7 rounded-lg hover:bg-gray-100 flex items-center justify-center font-bold text-gray-600">+</button>
           </div>
 
           <div class="text-right">
-            <span class="text-xs text-gray-500 block">Perkiraan Total</span>
-            <span id="modal-total-price" class="text-lg font-extrabold text-farm-leaf">Rp 68.000</span>
+            <span class="text-[10px] sm:text-xs text-gray-500 block">Perkiraan Total</span>
+            <span id="modal-total-price" class="text-base sm:text-lg font-extrabold text-farm-leaf">Rp 68.000</span>
           </div>
         </div>
 
         <!-- Customer Name Input -->
         <div>
-          <label for="customer-name" class="block text-xs font-bold text-farm-deep uppercase tracking-wider mb-1">Nama Pemesan</label>
-          <input type="text" id="customer-name" placeholder="Contoh: Ibu Sarah / Bpk. Rudi" class="w-full px-4 py-2.5 rounded-xl border border-farm-border text-sm focus:outline-none focus:border-farm-leaf focus:ring-1 focus:ring-farm-leaf">
+          <label for="customer-name" class="block text-[11px] sm:text-xs font-bold text-farm-deep uppercase tracking-wider mb-1">Nama Pemesan</label>
+          <input type="text" id="customer-name" placeholder="Contoh: Ibu Sarah / Bpk. Rudi" class="w-full px-3.5 py-2.5 rounded-xl border border-farm-border text-sm focus:outline-none focus:border-farm-leaf focus:ring-1 focus:ring-farm-leaf">
         </div>
 
         <!-- Customer Address / Delivery Area Input -->
         <div>
-          <label for="customer-address" class="block text-xs font-bold text-farm-deep uppercase tracking-wider mb-1">Alamat / Area Pengiriman</label>
-          <input type="text" id="customer-address" placeholder="Contoh: Bintaro Sektor 9 / Jaksel (via Sameday)" class="w-full px-4 py-2.5 rounded-xl border border-farm-border text-sm focus:outline-none focus:border-farm-leaf focus:ring-1 focus:ring-farm-leaf">
+          <label for="customer-address" class="block text-[11px] sm:text-xs font-bold text-farm-deep uppercase tracking-wider mb-1">Alamat / Area Pengiriman</label>
+          <input type="text" id="customer-address" placeholder="Contoh: Bintaro Sektor 9 / Jaksel (via Sameday)" class="w-full px-3.5 py-2.5 rounded-xl border border-farm-border text-sm focus:outline-none focus:border-farm-leaf focus:ring-1 focus:ring-farm-leaf">
         </div>
 
         <!-- Notes Input -->
         <div>
-          <label for="customer-notes" class="block text-xs font-bold text-farm-deep uppercase tracking-wider mb-1">Catatan Tambahan (Opsional)</label>
-          <input type="text" id="customer-notes" placeholder="Contoh: Minta dikirim sebelum jam 12 siang" class="w-full px-4 py-2.5 rounded-xl border border-farm-border text-sm focus:outline-none focus:border-farm-leaf focus:ring-1 focus:ring-farm-leaf">
+          <label for="customer-notes" class="block text-[11px] sm:text-xs font-bold text-farm-deep uppercase tracking-wider mb-1">Catatan Tambahan (Opsional)</label>
+          <input type="text" id="customer-notes" placeholder="Contoh: Minta dikirim sebelum jam 12 siang" class="w-full px-3.5 py-2.5 rounded-xl border border-farm-border text-sm focus:outline-none focus:border-farm-leaf focus:ring-1 focus:ring-farm-leaf">
         </div>
 
         <!-- Submit to WhatsApp Button -->
-        <div class="pt-3">
-          <button type="button" id="modal-submit-wa" class="w-full py-3.5 px-6 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg shadow-green-600/30 transition-all">
+        <div class="pt-2">
+          <button type="button" id="modal-submit-wa" class="w-full py-3.5 px-5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg shadow-green-600/30 transition-all">
             <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
             </svg>
             <span>Kirim Pesanan Langsung ke WhatsApp</span>
           </button>
-          <p class="text-[11px] text-center text-gray-500 mt-2.5">
+          <p class="text-[10px] sm:text-[11px] text-center text-gray-500 mt-2">
             Pesan otomatis terformat rapi akan dibuka langsung di aplikasi WhatsApp Anda.
           </p>
         </div>

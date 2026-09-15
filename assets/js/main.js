@@ -1,11 +1,11 @@
 /**
  * Bari Farm - Main Interactive JavaScript
  * Menangani pemilihan varian produk, kalkulator harga, interaksi modal,
- * dan pembentukan pesan WhatsApp otomatis.
+ * drawer navigasi mobile responsif, dan pembentukan pesan WhatsApp otomatis.
  */
 
 // Konfigurasi Nomor WhatsApp Bari Farm
-const BARI_FARM_WA_NUMBER = "6289508781642"; // Ganti dengan nomor WhatsApp aktif Bari Farm
+const BARI_FARM_WA_NUMBER = "6289508781642"; // Nomor WhatsApp aktif Bari Farm
 
 // Data Varian Produk
 const PRODUCTS_DATA = {
@@ -13,14 +13,14 @@ const PRODUCTS_DATA = {
     name: "Daging Ayam Kampung Segar",
     variants: {
       "karkas-800": {
-        title: "Karkas Utuh (800g - 900g)",
+        title: "Karkas Muda (800g - 900g)",
         price: 58000,
-        badge: "Paling Pas untuk 2-3 Porsi",
+        badge: "Paling Pas 2-3 Porsi",
         desc: "Ayam kampung muda segar utuh lengkap dengan kepala & ceker bersih. Daging empuk, cocok untuk ayam goreng kremes atau panggang.",
         weight: "±850 gram"
       },
       "karkas-1000": {
-        title: "Karkas Utuh (1.0kg - 1.1kg)",
+        title: "Karkas Standar (1.0kg - 1.1kg)",
         price: 68000,
         badge: "Paling Favorit ⭐",
         desc: "Ukuran ideal keluarga dengan serat daging padat berisi, gurih alami, sangat lezat untuk sop ayam herbal & opor tradisi.",
@@ -95,38 +95,56 @@ document.addEventListener("DOMContentLoaded", () => {
   initSmoothScroll();
 });
 
-// 1. Sticky Navbar & Mobile Menu Toggle
+// 1. Sticky Navbar & Mobile Drawer Menu Toggle
 function initNavbar() {
   const navbar = document.getElementById("main-navbar");
   const mobileMenuBtn = document.getElementById("mobile-menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
   const mobileMenuClose = document.getElementById("mobile-menu-close");
+  const mobileMenuBackdrop = document.getElementById("mobile-menu-backdrop");
   const mobileLinks = document.querySelectorAll(".mobile-nav-link");
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 20) {
-      navbar.classList.add("navbar-scrolled");
+      navbar?.classList.add("navbar-scrolled");
     } else {
-      navbar.classList.remove("navbar-scrolled");
+      navbar?.classList.remove("navbar-scrolled");
     }
   });
 
-  if (mobileMenuBtn && mobileMenu) {
-    mobileMenuBtn.addEventListener("click", () => {
-      mobileMenu.classList.remove("hidden");
-    });
+  function openMobileMenu() {
+    if (!mobileMenu) return;
+    mobileMenu.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
   }
 
-  if (mobileMenuClose && mobileMenu) {
-    mobileMenuClose.addEventListener("click", () => {
-      mobileMenu.classList.add("hidden");
-    });
+  function closeMobileMenu() {
+    if (!mobileMenu) return;
+    mobileMenu.classList.add("hidden");
+    document.body.style.overflow = "";
+  }
+
+  if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener("click", openMobileMenu);
+  }
+
+  if (mobileMenuClose) {
+    mobileMenuClose.addEventListener("click", closeMobileMenu);
+  }
+
+  if (mobileMenuBackdrop) {
+    mobileMenuBackdrop.addEventListener("click", closeMobileMenu);
   }
 
   mobileLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      if (mobileMenu) mobileMenu.classList.add("hidden");
-    });
+    link.addEventListener("click", closeMobileMenu);
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      closeMobileMenu();
+      closeModal();
+    }
   });
 }
 
@@ -307,6 +325,18 @@ function updateModalTotal() {
   if (qtyEl) qtyEl.textContent = modalOrderState.qty;
 }
 
+function closeModal() {
+  const modal = document.getElementById("order-modal");
+  if (modal) {
+    modal.classList.add("hidden");
+    // Hanya buka kembali scroll jika mobile menu juga sedang tertutup
+    const mobileMenu = document.getElementById("mobile-menu");
+    if (!mobileMenu || mobileMenu.classList.contains("hidden")) {
+      document.body.style.overflow = "";
+    }
+  }
+}
+
 function initModal() {
   const modal = document.getElementById("order-modal");
   const closeBtn = document.getElementById("modal-close-btn");
@@ -375,14 +405,6 @@ Apakah stok segar hari ini tersedia untuk dikirimkan via Sameday / Instant? Teri
   }
 }
 
-function closeModal() {
-  const modal = document.getElementById("order-modal");
-  if (modal) {
-    modal.classList.add("hidden");
-    document.body.style.overflow = "auto";
-  }
-}
-
 // 5. Smooth Scroll Navigation
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -393,7 +415,7 @@ function initSmoothScroll() {
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
         e.preventDefault();
-        const headerOffset = 80;
+        const headerOffset = 70;
         const elementPosition = targetElement.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
